@@ -8,10 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     
     let utils: Utils = Utils()
     var scrollView: UIScrollView = UIScrollView()
+    
+    func scrollViewDidScroll(scrollView: UIScrollView!) {
+        scrollView.alpha = 0.5
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView!) {
+        scrollView.alpha = 1.0
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView!) {
+        scrollView.alpha = 1.0
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +33,9 @@ class ViewController: UIViewController {
         
         let scrollViewRect: CGRect = self.view.bounds
         scrollView = UIScrollView(frame: scrollViewRect)
+        scrollView.delegate = self
         scrollView.pagingEnabled = true
-        scrollView.contentSize = CGSizeMake(scrollViewRect.size.width * 3, scrollViewRect.size.height)
+        scrollView.contentSize = CGSizeMake(scrollViewRect.size.width * 3.0, scrollViewRect.size.height)
         self.view.addSubview(scrollView)
         
         var imageViewRect: CGRect = self.view.bounds
