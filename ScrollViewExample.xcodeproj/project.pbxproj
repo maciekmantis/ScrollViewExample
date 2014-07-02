@@ -12,6 +12,10 @@
 		54EB9AC11963C79C0079FC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9ABF1963C79C0079FC90 /* Main.storyboard */; };
 		54EB9AC31963C79C0079FC90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AC21963C79C0079FC90 /* Images.xcassets */; };
 		54EB9ACF1963C79C0079FC90 /* ScrollViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9ACE1963C79C0079FC90 /* ScrollViewExampleTests.swift */; };
+		54EB9ADF1963C9980079FC90 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB9ADE1963C9980079FC90 /* Utils.swift */; };
+		54EB9AE31963CE630079FC90 /* imac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AE01963CE630079FC90 /* imac.jpg */; };
+		54EB9AE41963CE630079FC90 /* macbookair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AE11963CE630079FC90 /* macbookair.jpg */; };
+		54EB9AE71963CF7C0079FC90 /* macbookpro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54EB9AE61963CF7C0079FC90 /* macbookpro.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		54EB9AC81963C79C0079FC90 /* ScrollViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EB9ACD1963C79C0079FC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54EB9ACE1963C79C0079FC90 /* ScrollViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewExampleTests.swift; sourceTree = "<group>"; };
+		54EB9ADE1963C9980079FC90 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		54EB9AE01963CE630079FC90 /* imac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imac.jpg; sourceTree = SOURCE_ROOT; };
+		54EB9AE11963CE630079FC90 /* macbookair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbookair.jpg; sourceTree = SOURCE_ROOT; };
+		54EB9AE61963CF7C0079FC90 /* macbookpro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbookpro.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,12 @@
 			children = (
 				54EB9ABB1963C79C0079FC90 /* AppDelegate.swift */,
 				54EB9ABD1963C79C0079FC90 /* ViewController.swift */,
+				54EB9ADE1963C9980079FC90 /* Utils.swift */,
 				54EB9ABF1963C79C0079FC90 /* Main.storyboard */,
 				54EB9AC21963C79C0079FC90 /* Images.xcassets */,
+				54EB9AE01963CE630079FC90 /* imac.jpg */,
+				54EB9AE11963CE630079FC90 /* macbookair.jpg */,
+				54EB9AE61963CF7C0079FC90 /* macbookpro.jpg */,
 				54EB9AB91963C79C0079FC90 /* Supporting Files */,
 			);
 			path = ScrollViewExample;
@@ -189,7 +201,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB9AE71963CF7C0079FC90 /* macbookpro.jpg in Resources */,
 				54EB9AC11963C79C0079FC90 /* Main.storyboard in Resources */,
+				54EB9AE41963CE630079FC90 /* macbookair.jpg in Resources */,
+				54EB9AE31963CE630079FC90 /* imac.jpg in Resources */,
 				54EB9AC31963C79C0079FC90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +225,7 @@
 			files = (
 				54EB9ABE1963C79C0079FC90 /* ViewController.swift in Sources */,
 				54EB9ABC1963C79C0079FC90 /* AppDelegate.swift in Sources */,
+				54EB9ADF1963C9980079FC90 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
